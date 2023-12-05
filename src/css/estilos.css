@@ -1,0 +1,127 @@
+body {
+    background-color: #000000;
+    color: whitesmoke;
+    font-family: "Rubik";
+    text-shadow: 3px 3px #000000;
+    overflow: hidden;
+}
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+main .bimestre {
+    display: none;
+    height: 100vh;
+}
+main .bimestre.selecionado {
+    display: block;
+}
+main .bimestre .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1080px;
+    z-index: 1;
+}
+.conteudo .nome-bimestre {
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.conteudo .descricao {
+    line-height: 25px;
+}
+ h1, h2, h3, h4 {
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 40px;
+}
+h1, h2  {
+    text-shadow: 2px 2px rgb(176, 168, 168);
+}
+p{
+    font-size: 28px;
+    font-weight: 100;
+}
+.conteudo .simbolo {
+    background-image: url("../imagens/logo-etec.png");
+    background-size: cover;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 35px;
+}
+.caixa {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+a button {
+    font-size:xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(232, 235, 19);
+    text-shadow: 2px 2px #000000;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(203, 224, 56);
+    background-color: rgba(247, 239, 6, 0.262);
+    cursor: pointer;
+}
+a button:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.pesquisa  {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 1px; 
+}
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 210px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+.botoes .botao {
+    border: none;
+    background: #00000000;
+    cursor: pointer;
+}
+.botoes .botao img {
+    border-radius: 15%;
+    width: 55%;
+    height: 70%;
+    box-shadow: 0 0 10px #D9D9D9;
+}
+.botoes .botao.selecionado {
+    transform: scale(1.1); 
+}
